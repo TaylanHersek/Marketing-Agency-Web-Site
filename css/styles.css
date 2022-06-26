@@ -1,0 +1,222 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  background-image: radial-gradient(circle at center, #899Dc4, #495D84);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: scroll;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  background: hsl(204 100% 5%);
+}
+
+/* html {
+  block-size: 100%;
+  inline-size: 100%;
+} */
+
+
+h1 {
+  color: lightblue;
+  font-size: 10vmin;
+  line-height: 1.1;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 5rem;
+}
+
+.header {
+  background: linear-gradient(
+    to right,
+    hsl(98 100% 62%),
+    hsl(204 100% 59%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin: 7% 5% 3%;
+}
+
+h3 {
+  color: #2ce0b9;
+}
+
+.description1 {
+  margin: 5% 20% 3%;
+  text-align: center;
+}
+
+/* HOVER ANIMATION */
+
+
+.what {
+  display: flex;
+  perspective: 10px;
+  transform: perspective(300px) rotateX(10deg);
+  /* will-change: perspective; */
+  perspective-origin: center center;
+  transition: all 1.3s ease-out;
+  justify-content: center;
+  transform-style: preserve-3d;
+  padding-top: 5%;
+  width: 50%;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8%;
+}
+
+.what:hover {
+  perspective: 1000px;
+  transition: all 1.3s ease-in;
+  transform: perspective(10000px) rotateX(0deg);
+  width: 50%;
+}
+
+.what:hover .text {
+  opacity: 1;
+}
+
+.what:hover .explainer {
+  opacity: 0;
+}
+
+.what:hover>div {
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+.left, .center, .right, .lefter, .righter {
+  width: 200px;
+  height: 150px;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+  /* border: 1px solid #fff; */
+  box-shadow: 0 0 20px 5px rgba(100, 100, 255, .4);
+  opacity: 0;
+  transition: all .3s ease;
+  transition-delay: 1s;
+  position: relative;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #58d;
+  cursor: pointer;
+  /* background-blend-mode: color-burn; */
+}
+
+.righter:hover {
+  box-shadow: 0 0 30px 10px #32AFF6;
+  background-color: #50CCB2;
+}
+.left:hover {
+  box-shadow: 0 0 30px 10px #32AFF6;
+  background-color: #50CCB2;
+}
+.center:hover {
+  box-shadow: 0 0 30px 10px #32AFF6;
+  background-color: #50CCB2;
+}
+.right:hover {
+  box-shadow: 0 0 30px 10px #32AFF6;
+  background-color: #50CCB2;
+}
+.lefter:hover {
+  box-shadow: 0 0 30px 10px #32AFF6;
+  background-color: #50CCB2;
+}
+
+.text {
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all .3s ease;
+  bottom: 0;
+  left: 5px;
+  position: absolute;
+  /* will-change: transform; */
+  color: #fff;
+  text-shadow: 0 0 5px rgba(100, 100, 255, .6)
+}
+
+.lefter {
+  transform: translateX(-60px) translateZ(-50px) rotateY(-10deg);
+  background-image: url(https://cdn1.iconfinder.com/data/icons/science-technology-outline/91/Science__Technology_34-512.png);
+}
+
+
+.left {
+  transform: translateX(-30px) translateZ(-25px) rotateY(-5deg);
+  background-image: url(https://cdn0.iconfinder.com/data/icons/metaverse-53/512/Nft_Blockchain_Crypto_token_Cryptocurrency_Digital-512.png);
+}
+
+.center {
+  opacity: 1;
+  background-image: url(https://cdn2.iconfinder.com/data/icons/consumer-behavior-4/512/influencer-woman-idol-advertisement-smartphone-512.png);
+}
+
+.right {
+  transform: translateX(30px) translateZ(-25px) rotateY(5deg);
+  background-image: url(https://cdn3.iconfinder.com/data/icons/printing-16/512/505_3d_Printing_Machine_Print_Printing-512.png);
+}
+
+.righter {
+  transform: translateX(60px) translateZ(-50px) rotateY(10deg);
+  background-image: url(https://cdn1.iconfinder.com/data/icons/internet-of-things-24/160/webdesign-512.png);
+}
+
+#Selin {
+  background-image: url(https://media-exp2.licdn.com/dms/image/C4D03AQEfSnYPC_sa-A/profile-displayphoto-shrink_800_800/0/1606831230664?e=1661385600&v=beta&t=8PMK1_fOG2ZEUddW4uEvCHXV8yakoLSu-eqeBHKK1EU);
+}
+
+#Arda {
+  background-image: url(https://media-exp2.licdn.com/dms/image/C4E03AQFbiaWTCyIdSQ/profile-displayphoto-shrink_800_800/0/1534060826077?e=1661385600&v=beta&t=gNZDrk9iauPCdMI8Xj-zNnJBBMS7g7AjtYU0kMjtC9g);
+}
+
+#Taylan {
+  background-image: url(https://media-exp2.licdn.com/dms/image/C4D03AQFSSxofyXrd4A/profile-displayphoto-shrink_800_800/0/1653480890233?e=1661385600&v=beta&t=3BU4OFENgyGEhQ12uCRW9U_450MCxuwBvze4rQyrbMI);
+}
+
+
+.explainer {
+  font-weight: 300;
+  font-size: 1.3rem;
+  color: #fff;
+  transition: all .6s ease;
+  width: 100%;
+  height: 100%;
+  background-color: #303050;
+  background-image: radial-gradient(circle at center top, #68E37B, #33a);
+  border-radius: 10px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, .8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ref {
+  background-color: #000;
+  background-image: linear-gradient(to bottom, #d80, #c00);
+  border-radius: 3px;
+  padding: 7px 10px;
+  position: absolute;
+  font-size: 16px;
+  bottom: 10px;
+  right: 10px;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 3px rgba(0, 0, 0, .4);
+}
+
+.ref:first-letter {
+  font-size: 12px;
+}
+
+/* HOVER ANIMATION */
+
+
+iframe {
+  height: 650px;
+}
