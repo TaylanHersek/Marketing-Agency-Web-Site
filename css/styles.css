@@ -220,3 +220,15 @@ h3 {
 iframe {
   height: 650px;
 }
+
+.copyright {
+  color: #68E37B;
+  font-size: 1rem;
+}
+
+.footer {
+  text-align: center;
+  height: 100px;
+  margin-top: 3%;
+}
+
